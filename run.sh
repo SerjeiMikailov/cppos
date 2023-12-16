@@ -15,7 +15,7 @@ ld -m elf_i386 -T linker.ld ./build/kernel.o ./build/boot.o -o ./build/CppOS.bin
 grub-file --is-x86-multiboot build/CppOS.bin
 
 mkdir -p isodir/boot/grub
-cp build/Moye.bin isodir/boot/CppOS.bin
+cp build/CppOS.bin isodir/boot/CppOS.bin
 
 cp grub.cfg isodir/boot/grub/grub.cfg
 

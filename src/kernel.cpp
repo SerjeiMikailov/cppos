@@ -149,8 +149,8 @@ void test_input()
                 next_line_index = 1;
                 print_string("CppOS");
                 print_new_line();
-            } else if (strcmp(command_buffer, "HELLO") == 0) {
-                print_string("Welcome to MoyeOS!");
+            } else if (strcmp(command_buffer, "OS --VERSION")  == 0) {
+                print_string("CppOS v1.1");
                 print_new_line();
             } else {
                 // Unrecognized command
