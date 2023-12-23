@@ -1,6 +1,4 @@
-#include "types.hpp"
 
-// kernel.hpp
 #ifndef KERNEL_HPP
 #define KERNEL_HPP
 
@@ -8,8 +6,7 @@ extern "C" void kernel_entry();
 
 // ... other declarations
 
-#endif
-
+#include "types.hpp"
 
 class Kernel{
   public:
@@ -37,3 +34,5 @@ class Kernel{
       WHITE,
     };
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef UTILS_HPP
+#define UTILS_HPP
+
 #include "types.hpp"
 
 class Utils 
@@ -42,3 +45,5 @@ class Utils
       }    
     }
 };
+
+#endif
