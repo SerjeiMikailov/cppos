@@ -1,6 +1,6 @@
 #include "kernel.hpp"
 #include "keyboard.hpp"
-#include "utils.hpp"
+#include "Mem.hpp"
 
 #define MAX_INPUT_LENGHT 200
 #define custom_sizeof(type) ((uint32)(sizeof(type)))
@@ -212,8 +212,14 @@ void test_input()
 
 void kernel_entry()
 {
+  char array[MAX_DATA][MAX_STRING_LENGHT] = {"Cleitus", "Ephigenio"};
+  
+  char (*result)[MAX_STRING_LENGHT] = &array[1];
+
   init_vga(Kernel::WHITE, Kernel::BLUE);
   print_string("CppOS Terminal");
+  print_new_line();
+  print_string(*result);
   print_new_line();
   test_input();
 }

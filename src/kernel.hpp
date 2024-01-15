@@ -6,8 +6,6 @@ extern "C" void kernel_entry();
 
 // ... other declarations
 
-#include "types.hpp"
-
 class Kernel{
   public:
     #define NULL 0
