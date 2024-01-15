@@ -41,5 +41,6 @@ void Utils::itoa(int num, char *number)
       num = num / 10;
     }
     number[dgcount] = '\0';
-  }
+  } 
 }
+
