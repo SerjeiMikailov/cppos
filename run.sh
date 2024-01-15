@@ -4,8 +4,10 @@ cd src
 
 as --32 boot.s -o ../build/boot.o
 
-clang++ -m32 -c kernel.cpp -o ../build/kernel.o -fno-stack-protector -ffreestanding -O1 -Wall -Wextra
-clang++ -m32 -c keyboard.cpp -o ../build/keyboard.o -fno-stack-protector -ffreestanding -O1 -Wall -Wextra
+clang++ -std=c++20 -m32 -c kernel.cpp -o ../build/kernel.o -fno-stack-protector -ffreestanding -O1 -Wall -Wextra
+clang++ -std=c++20 -m32 -c keyboard.cpp -o ../build/keyboard.o -fno-stack-protector -ffreestanding -O1 -Wall -Wextra
+clang++ -std=c++20 -m32 -c mem.cpp -o ../build/mem.o -fno-stack-protector -ffreestanding -O1 -Wall -Wextra
+clang++ -std=c++20 -m32 -c utils.cpp -o ../build/utils.o -fno-stack-protector -ffreestanding -O1 -Wall -Wextra 
 
 cd ..
 

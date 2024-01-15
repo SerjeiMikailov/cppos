@@ -3,6 +3,6 @@
 ---
 
 - TUI
-- Clang compiler (i also like to use 32bit gcc cross compiler)
+- Clang compiler 
 - GRUB bootloader
 - Keyboard driver only
