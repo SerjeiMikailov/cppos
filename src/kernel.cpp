@@ -212,14 +212,27 @@ void test_input()
 
 void kernel_entry()
 {
-  char array[MAX_DATA][MAX_STRING_LENGHT] = {"Cleitus", "Ephigenio"};
+  char array[MAX_DATA][MAX_STRING_LENGHT];
   
-  char (*result)[MAX_STRING_LENGHT] = &array[1];
+  register_data(array, "osvald");
+  register_data(array, "obtervus");
+
+  char* result = return_data(array, 0);
+  char* result1 = return_data(array, 1);
 
   init_vga(Kernel::WHITE, Kernel::BLUE);
+  
   print_string("CppOS Terminal");
+
   print_new_line();
-  print_string(*result);
   print_new_line();
+
+  print_string(result); // print array index 0
+  print_new_line();
+  print_string(result1); // print array index 1
+  
+  print_new_line();
+  print_new_line();
+
   test_input();
 }
