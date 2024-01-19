@@ -1,6 +1,6 @@
-#include "kernel.hpp"
-#include "keyboard.hpp"
-#include "Mem.hpp"
+#include "../includes/kernel/kernel.hpp"
+#include "../includes/drivers/keyboard.hpp"
+#include "../includes/kernel/mem.hpp"
 
 #define MAX_INPUT_LENGHT 200
 #define custom_sizeof(type) ((uint32)(sizeof(type)))

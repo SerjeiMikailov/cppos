@@ -1,7 +1,7 @@
 #ifndef KEYBOARD_HPP
 #define KEYBOARD_HPP
 
-#include "types.hpp"
+#include "../libs/types.hpp"
 
 class Keyboard
 {
