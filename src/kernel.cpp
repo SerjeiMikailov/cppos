@@ -214,11 +214,11 @@ void kernel_entry()
 {
   char array[MAX_DATA][MAX_STRING_LENGHT];
   
-  register_data(array, "osvald");
-  register_data(array, "obtervus");
+  register_to_array(array, "osvald");
+  register_to_array(array, "obtervus");
 
-  char* result = return_data(array, 0);
-  char* result1 = return_data(array, 1);
+  char* result = return_array_data(array, 0);
+  char* result1 = return_array_data(array, 1);
 
   init_vga(Kernel::WHITE, Kernel::BLUE);
   
