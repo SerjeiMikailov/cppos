@@ -1,8 +1,3 @@
 # CppOS
 
----
-
-- TUI
-- Clang compiler 
-- GRUB bootloader
-- Keyboard driver only
+### UNSTABLE BUILD VERSION
